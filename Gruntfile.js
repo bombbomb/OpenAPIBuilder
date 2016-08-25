@@ -6,7 +6,7 @@ module.exports = function(grunt) {
             multiple: {
                 command: [
                     'java -jar build/swagger-codegen-cli.jar generate  -i https://dev.api.bombbomb.com/v2/spec  -l javascript  -o build/nodejs -c config/nodejs.json',
-                    'sh build/nodejs/git_push.sh --force bombbomb bombbomb-nodejs-openapi'
+                    'sh build/nodejs/git_push.sh bombbomb bombbomb-nodejs-openapi'
                 ].join('&&')
             }
         }
