@@ -2,5 +2,5 @@ language: java
 
 script:
   # nodejs
-  - java -jar swagger-codegen-cli.jar generate -i https://dev.api.bombbomb.com/v2/spec -l nodejs -o nodejs -c config/nodejs.json
+  - java -jar swagger-codegen-cli.jar generate -i https://dev.api.bombbomb.com/v2/spec -l javascript -o nodejs -c config/nodejs.json
   - sh nodejs/git_push.sh bombbomb bombbomb-nodejs-openapi
