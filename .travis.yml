@@ -6,4 +6,4 @@ script:
 
   # nodejs
   - java -jar swagger-codegen-cli.jar generate -i https://dev.api.bombbomb.com/v2/spec -l javascript -o /var/tmp/nodejs -c config/nodejs.json
-  - sh /var/tmp/nodejs/git_push.sh bombbomb bombbomb-nodejs-openapi
+  - sh /var/tmp/nodejs/git_push.sh ehippy testspam
