@@ -23,6 +23,7 @@ ls
 echo "Pushing $language repo back to GitHub..."
 git add -A
 git status
+git commit -m "Auto-generated!"
 git push origin master --force --verbose
 
 echo "Done generating $language client... resetting to start dir"
