@@ -5,6 +5,7 @@ script:
   - git config --global user.email "patrick@bombbomb.com"
 
   # nodejs
+  - mkdir /var/tmp/javascript
   - java -jar swagger-codegen-cli.jar generate -i https://dev.api.bombbomb.com/v2/spec -l javascript -o /var/tmp/build/javascript -c config/javascript.json
   - cd /var/tmp/javascript
   - sh git_push.sh ehippy testspam
