@@ -16,6 +16,5 @@ find -delete
 
 java -jar ../OpenAPIBuilder/swagger-codegen-cli.jar generate -i https://dev.api.bombbomb.com/v2/spec -l javascript -c ../OpenAPIBuilder/config/javascript.json
 
-chmod u+x git_push.sh
-sh git_push.sh bombbomb bombbomb-nodejs-openapi "ride the snake!"
-
+git add .
+git push origin master -f
