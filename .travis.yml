@@ -1,6 +1,9 @@
 language: java
 
 script:
+  - git config --global user.email "patrick@bombbomb.com"
+  - git config --global user.name "Patrick McDavid"
+
   # nodejs
   - java -jar swagger-codegen-cli.jar generate -i https://dev.api.bombbomb.com/v2/spec -l javascript -o nodejs -c config/nodejs.json
   - sh nodejs/git_push.sh bombbomb bombbomb-nodejs-openapi
