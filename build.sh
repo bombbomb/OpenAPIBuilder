@@ -8,3 +8,4 @@ git config --global user.email "patrick@bombbomb.com"
 
 sh build_lang.sh javascript
 sh build_lang.sh php
+sh build_lang.sh csharp
