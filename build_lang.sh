@@ -7,7 +7,7 @@ echo "Building $language..."
 echo "Making $language directory..."
 mkdir ../${language}
 cd ../${language}
-
+pwd
 
 echo "Performing $language git bootstrapping..."
 git init
@@ -18,11 +18,13 @@ git rm *
 
 echo "Generating $language OpenAPI client..."
 java -jar ../OpenAPIBuilder/swagger-codegen-cli.jar generate -i https://dev.api.bombbomb.com/v2/spec -l ${language} -c ../OpenAPIBuilder/config/${language}.json
+ls
 
 echo "Pushing $language repo back to GitHub..."
 git add .
 git push origin master -f
 
 
-echo "Done generating $language client..."
+echo "Done generating $language client... resetting to start dir"
 cd ../OpenAPIBuilder
+pwd
