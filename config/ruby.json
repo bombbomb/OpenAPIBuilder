@@ -1,5 +1,8 @@
 {
-  "projectName": "bombbomb-ruby-openapi",
-  "projectVersion" : "1.0.0",
+  "gemName": "bombbomb",
+  "moduleName": "BombBomb",
+  "gemHomepage": "http://developer.bombbomb.com",
+  "gemSummary": "A ruby wrapper for BombBomb's API",
+  "gemVersion" : "1.0.0",
   "projectDescription" : "A ruby gem for the BombBomb API"
 }
