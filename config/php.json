@@ -1,12 +1,10 @@
 {
   "projectName": "bombbomb-nodejs-openapi",
-  "packagePath": "BombBomb",
+  "packagePath": ".",
   "composerVendorName": "BombBomb",
   "composerProjectName": "BombBomb",
   "gitUserId": "bombbomb",
   "gitRepoId": "bombbomb-php-openapi",
   "variableNamingConvention": "camelCase",
-  "apiPackage": "BombBomb",
-  "modelPackage": "BombBomb",
   "artifactVersion" : "APIVERSIONSLUG"
 }
