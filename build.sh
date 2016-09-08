@@ -13,7 +13,7 @@ api_version=`ruby getVersion.rb`
 echo "Found API Version: ${api_version}"
 
 cd config
-sed -i 's/APIVERSIONSLUG/$api_version/g' *.json
+sed -i 's/APIVERSIONSLUG/{$api_version}/g' *.json
 cd ..
 
 sh build_lang.sh javascript ${spec}
