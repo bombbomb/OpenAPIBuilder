@@ -1,0 +1,5 @@
+{
+  "projectName": "bombbomb-ruby-openapi",
+  "projectVersion" : "1.0.0",
+  "projectDescription" : "A ruby gem for the BombBomb API"
+}
