@@ -6,5 +6,7 @@
   "gitUserId": "bombbomb",
   "gitRepoId": "bombbomb-php-openapi",
   "variableNamingConvention": "camelCase",
+  "apiPackage": "BombBomb",
+  "modelPackage": "BombBomb",
   "artifactVersion" : "APIVERSIONSLUG"
 }
