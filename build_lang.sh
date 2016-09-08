@@ -1,8 +1,9 @@
 #!/bin/sh
 
 language=$1
+spec_url=$2
 
-echo "Building $language..."
+echo "Building $language from spec $spec_url..."
 
 echo "Making $language directory..."
 mkdir ../${language}
@@ -16,7 +17,7 @@ git pull origin master
 git status
 
 echo "Generating $language OpenAPI client..."
-java -jar ../OpenAPIBuilder/swagger-codegen-cli.jar generate -i https://api.bombbomb.com/v2/spec -l ${language} -c ../OpenAPIBuilder/config/${language}.json
+java -jar ../OpenAPIBuilder/swagger-codegen-cli.jar generate -i ${spec_url} -l ${language} -c ../OpenAPIBuilder/config/${language}.json
 ls
 
 echo "Pushing $language repo back to GitHub..."
