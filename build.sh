@@ -21,3 +21,4 @@ sh build_lang.sh php ${spec}
 sh build_lang.sh csharp ${spec}
 sh build_lang.sh swift ${spec}
 sh build_lang.sh ruby ${spec}
+sh build_lang.sh go ${spec}
