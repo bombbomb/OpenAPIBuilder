@@ -1,5 +1,8 @@
 {
   "projectName": "bombbomb-swift-openapi",
-  "projectVersion" : "APIVERSIONSLUG",
-  "projectDescription" : "We make hits!"
+  "podVersion" : "APIVERSIONSLUG",
+  "podDescription" : "We make hits!",
+  "podHomepage" : "https://github.com/bombbomb/bombbomb-swift-openapi",
+  "podSummary" : "Auto-generated swift API",
+  "useRxSwift" : true
 }
